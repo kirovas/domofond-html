@@ -180,6 +180,14 @@
                                           <label for="" class="w-144 mr-15">Статус ЖК</label>
                                           <select name="" id="" class="custom-select w-277 border-bl"></select>
                                       </div>
+                                      <div class="d-flex justify-content-satrt align-items-center mt-3">
+                                        <label for="" class="mr-15 w-247 ">Первый взнос</label>
+                                        <input type="text" class="form-control w-64 mr-10">
+                                        <span>% от общей стоимости квартиры</span>
+                                        <label for="" class="ml-auto mr-10">Рассрочка до</label>
+                                        <input type="text" class="form-control w-64 mr-10">
+                                        <span>месяцев</span>
+                                    </div>
                                   </div>
                               </div>
                               <div class="row mt-4">
@@ -2972,35 +2980,49 @@
                    <div class="row mt-3">
                     <div class="col-12">
                         <div class="nf-gr">
-                           <div class="d-flex justify-content-start align-items-center mb-2">
-                               <label for="" class="nf-rl mr-15 w-93">Цена</label>
-                               <input type="text" class="form-control mw-70 text-center mr-2">
-                               <label for="" class="mr-10">USD</label>
-                               <span class="mr-10">=</span>
-                               <input type="text" class="form-control mw-70 text-center mx-2 ">
-                               <span class="mr-10">EUR</span>
-                               <label for="" class="ml-1">=</label>
-                                <input type="text" class="form-control mw-70 text-center mx-2 ">
-                                <span>UAH</span>
+                          <div class="row">
+                            <div class="col-9" style="flex: 0 0 68%; max-width: 68%;">
+                              <div class="d-flex justify-content-start align-items-center mb-2">
+                                <label for="" class="nf-rl mr-15 w-93">Цена</label>
+                                <input type="text" class="form-control w-68 text-center mr-2">
+                                <label for="" class="mr-05">тыс.  USD</label>
+                                <span class="mr-10 mr-10">=</span>
+                                <input type="text" class="form-control w-68 text-center  mr-10">
+                                <span class="mr-05">тыс.  EUR</span>
+                                <label for="" class="ml-1 mr-10">=</label>
+                                 <input type="text" class="form-control w-68 text-center  mr-10">
+                                 <span class="w-66">тыс.  UAH</span>
+                                 
+                             </div>
+                             <div class="d-flex justify-content-start align-items-center mb-2">
+                               <label for="" class="nf-rl mr-15 w-93">Цена за кв.м</label>
+                               <input type="text" class="form-control w-68 text-center mr-2 ">
+                                <label for="" class="mr-05">тыс.  USD</label>
+                                <span class="mr-10 mr-10" >=</span>
+                                <input type="text" class="form-control w-68 text-center  mr-10">
+                                <span class="mr-05">тыс.  EUR</span>
+                                <label for="" class="ml-1 mr-10">=</label>
+                                 <input type="text" class="form-control w-68 text-center  mr-10">
+                                 <span class="w-66">тыс.  UAH</span>
                                 
                             </div>
-                            <div class="d-flex justify-content-start align-items-center mb-2">
-                              <label for="" class="nf-rl mr-15 w-93">Цена за кв.м</label>
-                              <input type="text" class="form-control mw-70 text-center mr-2 ">
-                               <label for="" class="mr-10">USD</label>
-                               <span class="mr-10">=</span>
-                               <input type="text" class="form-control mw-70 text-center mx-2 ">
-                               <span class="mr-10">EUR</span>
-                               <label for="" class="ml-1">=</label>
-                                <input type="text" class="form-control mw-70 text-center mx-2 ">
-                                <span>UAH</span>
-                               
-                           </div>
-                           
+                            </div>
                             
+                          <div class="col-3">
+                            <div class="d-flex justify-content-start align-items-center mb-2">
+                              <label for="" class="nf-rl mr-20 w-100">Первый взнос</label>
+                              <input type="text" class="form-control w-68 gb-input text-center mr-2 ">
+                               <span class="">%</span>
+                           </div>
+                           <div class="d-flex justify-content-start align-items-center mb-2">
+                            <label for="" class="nf-rl mr-20 w-100">Первый взнос</label>
+                            <input type="text" class="form-control w-68 gb-input text-center mr-2 ">
+                             <span class="">месяцев</span>
+                         </div>
+                          </div>
+                          </div>
                         </div>
-                    </div>
-                       
+                    </div>  
                    </div>
                   
                 
@@ -3727,8 +3749,18 @@
               <input type="text" class="form-control w-64 ml-auto mr-10">
               <span class="mr-10">кв.</span>
               <input type="text" class="form-control w-64 mr-10">
-              <span>года</span>
+              <span class="w-53">года</span>
           </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-start align-items-center mb-2">
+              <div class="custom-control custom-radio w-174">
+                <input type="radio" id="kvprice" name="kvprice" class="custom-control-input">
+                <label class="custom-control-label" for="kvprice">Цена за 1 кв.м</label>
+              </div>
+              <input type="text" class="form-control w-120 mr-10">
+              <span>USD</span>
+            </div>
           </div>
         </div>
         <div class="row mt-15">
@@ -3748,28 +3780,50 @@
           <span>комнат</span>
         </div>
          </div>
+         <div class="col-md-6">
+          <div class="d-flex justify-content-start align-items-center mb-2">
+            <div class="custom-control custom-radio w-174">
+              <input type="radio" id="flatprice" name="kvprice" class="custom-control-input">
+              <label class="custom-control-label" for="flatprice">Цена квартиры</label>
+            </div>
+            <input type="text" class="form-control w-120 mr-10">
+            <span>USD</span>
+          </div>
+        </div>
         </div>
         <div class="row mt-15">
           <div class="col-md-6">
-            <div class="d-flex justify-content-start align-items-center">
-              <label for="" class="mw-101 mr-auto">Этаж с:</label>
+            <div class="d-flex justify-content-start align-items-center mb-2">
+              <label for="" class=" mr-auto">Этаж с:</label>
               
-              <input type="text" class="form-control mw-70">
-              <label for="" class="mx-2">по</label>
-              <input type="text" class="form-control mw-70">
-             
+              <input type="text" class="form-control w-64 mr-10">
+              <label for="" class="mr-10">по</label>
+              <input type="text" class="form-control w-64">
+              <span class="w-63"> </span>
+            </div>
+            <div class="d-flex justify-content-start align-items-center">
+              <label for="" class=" mr-auto">Этажность с:</label>
+              
+              <input type="text" class="form-control w-64 mr-10">
+              <label for="" class="mr-10">по</label>
+              <input type="text" class="form-control w-64">
+              <span class="w-63"> </span>
             </div>
           </div>
           
           <div class="col-md-6">
-            <div class="d-flex justify-content-start align-items-center">
-              <label for="" class="mw-101 mr-10">Этажность с:</label>
-              
-              <input type="text" class="form-control mw-70">
-              <label for="" class="mx-2">по</label>
-              <input type="text" class="form-control mw-70">
-             
+            <div class="d-flex justify-content-start align-items-center mb-2">
+              <label for="" class="w-174">Первый взнос ≤</label>
+              <input type="text" class="form-control w-48 mr-10">
+              <span>%</span>
             </div>
+            <div class="d-flex justify-content-start align-items-center mb-2">
+              <div class="d-flex justify-content-start align-items-center mb-2">
+                <label for="" class="w-174">Рассрочка ≥</label>
+                <input type="text" class="form-control w-48 mr-10">
+                <span>месяцев</span>
+              </div>
+           </div>
           </div>
         </div>
         <div class="row mt-15">
@@ -3785,18 +3839,7 @@
               <span>USD</span>
            </div>
           </div>
-          <div class="col-md-6">
-            <div class="d-flex justify-content-start align-items-center col-12 mb-2">
-              <div class="custom-control custom-radio mr-15" >
-                  <input type="radio" class="custom-control-input" id="price3" name="price1Radio">
-                  <label class="custom-control-label pt-1" for="price3">Цена квартиры до</label>
-              </div>
-              
-              <span class="mr-10">до</span>
-              <input type="text" class="form-control w-53 mr-10">
-              <span>USD</span>
-           </div>
-          </div>
+         
         </div>
         <div class="table-filter row justify-content-between">
           <div class="col-12">
@@ -6914,13 +6957,24 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-4">
                       <div class="d-flex justify-content-start align-items-start mt-3">
                         <p>Цена за кв.м</p>
                         <p class="ml-auto"><strong>1 000</strong></p>
                       </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-4">
+                      <div class="d-flex justify-content-start align-items-start mt-3">
+                        <p>1-й взнос</p>
+                        <p class="ml-auto"><strong>10%</strong></p>
+                      </div>
+                      
+                    </div>
+                    <div class="col-4">
+                      <div class="d-flex justify-content-start align-items-start mt-3">
+                        <p>Рассрочка</p>
+                          <p class="ml-auto"><strong>36 мес</strong></p>
+                      </div>
                       
                     </div>
                   </div>
